@@ -15,7 +15,7 @@ function validateRegisterInput(data) {
 
     if(Validator.isEmpty(data.email)) {
         errors.email = "Email field is required";
-    } else if(!Validator.isEmail(data)) {
+    } else if(!Validator.isEmail(data.email)) {
         errors.email = "Email is invalid";
     }
 
